@@ -1,9 +1,9 @@
 public class Passenger {
 
     private String name;
-    private String bags;
+    private int bags;
 
-    public Passenger (String name, String bags) {
+    public Passenger (String name, int bags) {
         this.name = name;
         this.bags = bags;
     }
@@ -12,15 +12,8 @@ public class Passenger {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getBags() {
+    public int getBags() {
         return bags;
     }
 
-    public void setBags(String bags) {
-        this.bags = bags;
-    }
 }

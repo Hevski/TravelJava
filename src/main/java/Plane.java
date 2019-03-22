@@ -22,15 +22,4 @@ public class Plane {
         return totalWeight;
     }
 
-    public void setPlane(PlaneType plane) {
-        this.plane = plane;
-    }
-
-    public void setCapacity(int capacity) {
-        this.capacity = capacity;
-    }
-
-    public void setTotalWeight(int totalWeight) {
-        this.totalWeight = totalWeight;
-    }
 }
