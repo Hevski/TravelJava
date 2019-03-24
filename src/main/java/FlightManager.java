@@ -37,21 +37,14 @@ public class FlightManager {
         Passenger temp;
         for (int i = sortedPassengers.size() -1; i > 0; i--){
 
-            boolean isSorted = true;
-
             for (int j = 0; j < i; j++){
                 if (sortedPassengers.get(j + 1).getSeatNo() < sortedPassengers.get(j).getSeatNo()){
-                    isSorted = false;
                     temp = sortedPassengers.get(j + 1);
                     sortedPassengers.set(j + 1, sortedPassengers.get(j));
                     sortedPassengers.set(j, temp);
                 }
             }
-            if (isSorted){
-                break;
-            }
         }
         return sortedPassengers;
     }
-
 }
